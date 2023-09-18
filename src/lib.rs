@@ -1,4 +1,10 @@
-mod utils;
+#![cfg_attr(not(test), no_std)]
+
+pub mod model;
+pub mod state;
+pub mod web;
+
+extern crate alloc;
 
 use wasm_bindgen::prelude::*;
 
